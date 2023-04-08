@@ -1,6 +1,6 @@
 # Ask user if they have played before
 
-instructions = input("Have you played 'Lucky Unicorn' before: (Yes or No): ")
+instructions = input("Have you played 'Lucky Unicorn' before: (Yes or No): ").lower()
 
 # If they say yes, skip instructions
 

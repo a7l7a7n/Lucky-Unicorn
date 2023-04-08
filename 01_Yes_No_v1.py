@@ -4,12 +4,12 @@ instructions = input("Have you played 'Lucky Unicorn' before? (Yes or No): ")
 
 # If they say yes, skip instructions
 
-if instructions == 'Yes' or instructions == 'yes':
+if instructions == 'Yes':
     print("Program continues")
 
 # If no, provide instructions
 
-elif instructions == 'No' or instructions == 'no':
+elif instructions == 'No':
     print("Provides Instructions")
 
 # Else, re-enter question
