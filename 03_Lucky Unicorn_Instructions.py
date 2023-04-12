@@ -2,26 +2,20 @@
 def yes_no(question_text):
     while True:
 
-
-
         # Ask user if they have played before
         answer = input(question_text).lower()
 
         # If they say yes, skip instructions
         if answer == 'yes' or answer == 'y':
             answer ='yes'
-            return answer
 
         # If no, provide instructions
         elif answer == 'no' or answer == 'n':
             answer = 'no'
-            return answer
 
         # Else, re-enter question
-
         else:
             print("Please answer 'yes' or 'no'")
-
 
 
 # Function:

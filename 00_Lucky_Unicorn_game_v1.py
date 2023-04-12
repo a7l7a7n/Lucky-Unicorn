@@ -1,7 +1,7 @@
 """Final program"""
 
 
-# Function:
+# Yes no Function:
 def yes_no(question_text):
     while True:
         # Ask user if they have played before
@@ -26,7 +26,8 @@ def yes_no(question_text):
             print("Please answer 'yes' or 'no'")
 
 
-# Function
+
+# number checking Function
 def number_check(question, low, high):
     error = "That wasn't a valid input\n" \
             "Please enter a whole number between {} and {}\n".format(low, high)
@@ -46,6 +47,8 @@ def number_check(question, low, high):
 
         except ValueError:
             print("error\nPlease enter a whole number between 1 & 10")
+
+
 
 
 #Main Routine:

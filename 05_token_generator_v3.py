@@ -3,7 +3,10 @@ Generates Random token, calculates user balance, changes winnings amounts"""
 
 import random
 
-tokens = ["unicorn", "horse", "zebra", "donkey"]
+tokens = ["unicorn",
+          "horse", "horse", "horse",
+          "zebra", "zebra", "zebra",
+          "donkey", "donkey", "donkey"]
 starting_balance = 100
 balance = starting_balance
 
