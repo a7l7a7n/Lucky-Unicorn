@@ -1,5 +1,5 @@
-"""Lucky Unicorn base component  - based on 00_Lucky_Unicorn_v1
-Components added after they had been created and tested & failed
+"""Lucky Unicorn base component  - based on 00_Lucky_Unicorn_v2
+Adding extra detail
 """
 import random
 
@@ -8,14 +8,12 @@ import random
 def yes_no(question_text):
     while True:
 
-
-
         # Ask user if they have played before
         answer = input(question_text).lower()
 
         # If they say yes, skip instructions
         if answer == 'yes' or answer == 'y':
-            answer ='yes'
+            answer = 'yes'
             return answer
 
         # If no, provide instructions
@@ -31,11 +29,22 @@ def yes_no(question_text):
 
 # Function to display instructions:
 def instructions():
-    print("***** HOW TO PLAY *****")
     print()
-    print("The rule fo the game will go here")
+    print(formatter("*", "HOW TO PLAY"))
     print()
-    print("Program continues")
+    print("Choose a starting amount to play with (must be between 1 & 10 dollars")
+    print()
+    print("Then press <enter> to play. You will get a random token which might be a Horse, Zebra, Donkey, or Unicorn")
+    print()
+    print("It costs 1 dollar to play each round, but depending on you prize, you could"
+          "win some money. These are the amounts for each token:"
+          "\tUnicorn: + 5 dollars\n"
+          "\tHorse: -50 cents\n"
+          "\tZebra: -50 cents\n"
+          "\tDonkey: -1 dollar")
+    print("See if you can avoid the donkeys, collect the unicorns, and finish with more money than you started with\n")
+
+    print("*" * 50)
     print()
 
 
@@ -69,6 +78,8 @@ def generate_token(balance):
     # testing loop to generate tokens
     while play_again != "x":
         rounds_played += 1
+        print(formatter(".", f"Round {rounds_played}"))
+        print()
         number = random.randint(1, 100)
 
         # Adjust balance
@@ -102,7 +113,7 @@ def generate_token(balance):
                 print()
 
         # Output
-        print(f"Round {rounds_played}, Token: {token}, Balance: ${balance}")
+        print(f"Balance: ${balance}")
         if balance < 1:
             print("\nSorry, you have run out of money")
             play_again = "x"
