@@ -1,4 +1,4 @@
-"""Final program"""
+"""Not the Final program"""
 
 
 # Yes no Function:
@@ -47,8 +47,6 @@ def number_check(question, low, high):
 
         except ValueError:
             print("error\nPlease enter a whole number between 1 & 10")
-
-
 
 
 #Main Routine:
